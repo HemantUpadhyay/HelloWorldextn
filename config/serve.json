@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://sdhealthcare.sharepoint.com/sites/RnD/SitePages/TestPage.aspx",
+      "customActions": {
+        "de8dd0da-5ca8-4286-a49a-7b73098b69e1": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "spSpFxExtn": {
+      "pageUrl": "https://sdhealthcare.sharepoint.com/sites/RnD/SitePages/TestPage.aspx",
+      "customActions": {
+        "de8dd0da-5ca8-4286-a49a-7b73098b69e1": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}
