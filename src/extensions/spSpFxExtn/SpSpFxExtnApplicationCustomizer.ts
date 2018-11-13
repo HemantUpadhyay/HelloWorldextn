@@ -46,18 +46,34 @@ export default class SpSpFxExtnApplicationCustomizer
     var functionSIteIDUrl = "https://functesthelloworld.azurewebsites.net/api/HttpTrigger1?code=zWFUcRwMIeXtUaCCYP8BOWYFa5jQn5SAE9/hHqFL/6Uk/mfavUhw0Q==&name=Hemant";
     this.context.spHttpClient.get(functionSIteIDUrl,SPHttpClient.configurations.v1)
     .then((response: SPHttpClientResponse) => {
-      response.json().then((responseJSON: JSON) => {
-        responseText = JSON.stringify(responseJSON);
-            if (response.ok) {
-                //resultMsg.style.color = "green";
-                Dialog.alert("done");
-                console.log(response);
-            } else {
-                //resultMsg.style.color = "red";
-                Dialog.alert("fail");
-                console.log(response);
-            }
-      })
+      if(response.ok)
+          {
+            response.json().then((responseJSON: JSON) => {
+                //._callPiwikScript(responseJSON.value);
+                responseText = JSON.stringify(responseJSON);
+                if (response.ok) {
+                    //resultMsg.style.color = "green";
+                    Dialog.alert("done");
+                    console.log(response);
+                } else {
+                    //resultMsg.style.color = "red";
+                    Dialog.alert("fail");
+                    console.log(response);
+                }
+              });
+          }
+      // response.json().then((responseJSON: JSON) => {
+      //   responseText = JSON.stringify(responseJSON);
+      //       if (response.ok) {
+      //           //resultMsg.style.color = "green";
+      //           Dialog.alert("done");
+      //           console.log(response);
+      //       } else {
+      //           //resultMsg.style.color = "red";
+      //           Dialog.alert("fail");
+      //           console.log(response);
+      //       }
+      // })
            
   }).catch((e) => {
     console.log(e);
@@ -187,7 +203,7 @@ export default class SpSpFxExtnApplicationCustomizer
   }
   
   private async Initiate() {    
-    await this.getNewPageStatus();
-    //this._getNewPageStatus();
+    //await this.getNewPageStatus();
+    this._getNewPageStatus();
   }
 }
