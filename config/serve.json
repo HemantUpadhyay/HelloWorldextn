@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://sdhealthcare.sharepoint.com/sites/RnD/SitePages/TestPage.aspx",
+      "pageUrl": "https://sevensoft.sharepoint.com/sites/RConnect/SitePages/SPFxDemo.aspx",
       "customActions": {
         "de8dd0da-5ca8-4286-a49a-7b73098b69e1": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -15,7 +15,7 @@
       }
     },
     "spSpFxExtn": {
-      "pageUrl": "https://sdhealthcare.sharepoint.com/sites/RnD/SitePages/TestPage.aspx",
+      "pageUrl": "https://sevensoft.sharepoint.com/sites/RConnect/SitePages/SPFxDemo.aspx",
       "customActions": {
         "de8dd0da-5ca8-4286-a49a-7b73098b69e1": {
           "location": "ClientSideExtension.ApplicationCustomizer",

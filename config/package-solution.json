@@ -4,17 +4,7 @@
     "name": "sp-fx-extn-client-side-solution",
     "id": "a77cd1d4-74da-464c-ad68-1c300f0050ff",
     "version": "1.0.0.0",
-    "includeClientSideAssets": true,
-    "webApiPermissionRequests": [
-      {
-        "resource": "User Details Custom API for SPFx",
-        "scope": "user_impersonation"
-      },
-      {
-        "resource": "Windows Azure Active Directory",
-        "scope": "User.Read"
-      }
-    ],
+    "includeClientSideAssets": true,    
     "features": [
       {
         "title": "Application Extension - Deployment of custom action.",
